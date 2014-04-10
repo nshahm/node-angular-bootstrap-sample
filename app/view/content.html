@@ -1,0 +1,16 @@
+  <div id="filterController" ng-controller="MainController">
+        <h2>Original list</h2>
+        <ul>
+            <li ng-repeat="name in nameList"> {{ name }} </li>
+        </ul>
+    
+        <h2>Palindrome name list</h2>
+        <ul>
+            <div ng-repeat="filteredName in filteredNameList = (nameList | palindrome:true)" >
+                <li> {{ filteredName }} </li>
+            </div>
+           
+        </ul>
+    
+            
+</div>

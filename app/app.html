@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html ng-app="SampleApp"> 
+    <head> 
+        <title>Node Angular bootstrap sample</title>
+        <link rel="stylesheet" href="css/app.css"/>
+        <link rel="stylesheet" href="../bower_components/angularjs/src/css/bootstrap-responsive.css"/>
+        <link rel="stylesheet" href="../bower_components/angularjs/src/css/bootstrap.css"/>
+        
+        <script src="../bower_components/angular/angular.js"/></script>
+        <!--script src="../bower_components/angular-bootstrap/ui-bootstrap.js"></script-->
+        <script src="../bower_components/angular-route/angular-route.js"></script>
+        <script src="js/app.js"></script>
+
+        <script src="js/routeconfig/SampleApp.RouteConfig.js"></script>
+        <script src="../bower_components/angularjs/src/js/angular-ui-bootstrap.js"></script>
+        <script src="js/constant/SampleApp.Constants.js"></script>
+        <script src="js/controller/SampleApp.Controller.js"></script>
+        <script src="js/directives/SampleApp.Directives.js"></script>
+        <script src="js/filters/SampleApp.Filters.js"></script>
+    </head>
+    
+    <body>
+        
+            
+    
+        <header ng-controller="HeaderController"> 
+            <sampleapp-header application-name="{{appName}}"></sampleapp-header>
+            
+           <button popover-placement="right" popover="" popover-trigger="mouseenter" class="btn btn-default">
+               <ul>
+                <li> <a href="#/main">Directives</a></li>
+                <li>Test - No link</li>
+               </ul>
+            </button>
+           <button popover-placement="right" popover="On the Bottom!" class="btn btn-default">Sample</button>
+    
+        </header>
+    
+        <nav></nav>
+        
+        <div ng-view></div>    
+        
+        <footer ng-controller="FooterController">
+            {{ appTitle }} - <h2> {{ appAuthor }}  </h2>
+            <div> App version using - Directives as Element :<application-version></application-version>  </div>
+            <p> App version using - Directives as Attribute : <div application-version> </div> </p>
+        </footer>
+  
+       
+    
+        <!--div ng-include src="'view/header.html'" ng-controller="HeaderController"></div-->
+    
+
+    </body>
+</html>

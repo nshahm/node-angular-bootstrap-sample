@@ -1,0 +1,19 @@
+{
+  "name": "node-angular-bootstrap-sample",
+  "version": "1.0",
+  "description": "Sample for Angular, bootstrap, nodejs",
+  "moduleType": [
+    "node"
+  ],
+  "authors": [
+    "ShahMohamed Nattarshah"
+  ],
+  "license": "MIT",
+  "private": true,
+   "dependencies": {
+    "angular-bootstrap": "~0.10.0",
+    "angularjs": "*",
+    "angular" : "*"
+    "angular-route" : "*"
+  }
+}

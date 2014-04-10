@@ -8,6 +8,10 @@ angular.module("SampleApp.Config", ['ngRoute'])
     .when('/', {
         templateUrl : 'view/welcome.html'
     })
+    .when('/filters', {
+        templatUrl : 'view/content.html',
+        controller : 'MainController'
+    })
     .otherwise({
         redirectTo : 'app/app.html'
     })

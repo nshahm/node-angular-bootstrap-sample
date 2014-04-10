@@ -26,13 +26,20 @@
         <header ng-controller="HeaderController"> 
             <sampleapp-header application-name="{{appName}}"></sampleapp-header>
             
-           <button popover-placement="right" popover="" popover-trigger="mouseenter" class="btn btn-default">
-               <ul>
-                <li> <a href="#/main">Directives</a></li>
-                <li>Test - No link</li>
-               </ul>
-            </button>
-           <button popover-placement="right" popover="On the Bottom!" class="btn btn-default">Sample</button>
+            
+            <li class="dropdown">
+                <a class="dropdown-toggle">Angular</a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="#/main">Directives</a>
+                        </li>
+                        <li>
+                            <a href="#/filters">Filters</a>
+                        </li>
+                      
+                    </ul>
+            </li>
+         
     
         </header>
     

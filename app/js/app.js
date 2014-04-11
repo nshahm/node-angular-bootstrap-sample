@@ -6,9 +6,11 @@ angular.module('SampleApp', [
     'SampleApp.Controller',
     'SampleApp.Directives',
     'SampleApp.Filters',
+    'SampleApp.Services',
     
     // Angular modules.
     'ngRoute',
+    'ngResource',
     
     'ui.bootstrap'
 ]);

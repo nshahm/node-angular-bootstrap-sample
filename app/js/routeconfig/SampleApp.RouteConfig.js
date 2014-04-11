@@ -1,16 +1,16 @@
 angular.module("SampleApp.Config", ['ngRoute'])
 .config(['$routeProvider', function($routeProvider) {
     $routeProvider
-    .when('/main', {
-        templateUrl : 'view/content.html',
-        controller : 'MainController'
+    .when('/directive', {
+        templateUrl : 'view/directive.html',
+        controller : 'DirectiveController'
     })
     .when('/', {
         templateUrl : 'view/welcome.html'
     })
     .when('/filters', {
-        templatUrl : 'view/content.html',
-        controller : 'MainController'
+        templateUrl : 'view/filter.html',
+        controller : 'FilterController'
     })
     .otherwise({
         redirectTo : 'app/app.html'

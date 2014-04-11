@@ -11,11 +11,20 @@ angular.module('SampleApp.Controller', [])
     $scope.appAuthor = $GlobalSettings.APP_AUTHOR;
     $scope.appVersion = $GlobalSettings.APP_VERSION;
 }])
-.controller('MainController', ['$scope', function($scope) {
+.controller('FilterController', ['$scope', function($scope) {
     
-    $scope.nameList = ['pollachi','chennai','coimbatore','malayalam','madam'];
+    $scope.nameList = ['pollachi','chennai','coimbatore','civic','radar'];
     
     $scope.filteredNameList = [];
 }])
+.controller('DirectiveController', ['$scope', 'AngularService', function($scope, $AngularService) {
+    
+   $AngularService.getListOfDirectives(function(data) {
+        $scope.listOfDirective = data;
+        console.log($scope.listOfDirective);
+   });
+}])
+
+
  
 

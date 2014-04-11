@@ -1,0 +1,7 @@
+{
+    "listofdirectives" : {
+        "builtin" : ["ng-app", "ng-bind", "ng-show", "ng-hide", "ng-controller"],
+        "custom" : ["sampleapp-header", "app-version"],
+        "default-type" : "builtin" 
+        }
+}
